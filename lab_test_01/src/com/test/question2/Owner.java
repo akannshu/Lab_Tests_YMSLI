@@ -1,32 +1,68 @@
 package com.test.question2;
 
 public class Owner {
+	private String name;
+	private Date date;
+	private String nic;
+	
+	
+	public Owner() {}
 
-	private String name, nic;
-	private Date date_of_birth;
 
-	public Owner(String name, String nic, Date date_of_birth) {
-		super();
+	public Owner(String name, String nic,Date date) {
 		this.name = name;
+		this.date = date;
 		this.nic = nic;
-		this.date_of_birth = date_of_birth;
 	}
-
-	public Owner() {
-	};
-
+	
 	public Owner(Owner owner) {
+		this.name = owner.getName();
+		this.date = owner.getDate();
+		this.nic = owner.getNic();
 	}
 
-	public void input() {
-	};
 
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public Date getDate() {
+		return date;
+	}
+
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+
+	public String getNic() {
+		return nic;
+	}
+
+
+	public void setNic(String nic) {
+		this.nic = nic;
+	}
+	
 	public void print() {
-	};
-
+		System.out.println("Owner details are:");
+		System.out.println("Name: " + this.name);
+		System.out.println("Date: " + this.date);
+		System.out.println("Nic: " + this.nic);
+	}
+	
+	
 	@Override
 	public String toString() {
-		return "Owner [name=" + name + ", nic=" + nic + ", date_of_birth=" + date_of_birth + "]";
-	};
-
+		return "Owner [name=" + name + ", date=" + date + ", nic=" + nic + "]";
+	}
+	
+	
 }
