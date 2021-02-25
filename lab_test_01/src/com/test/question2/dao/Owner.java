@@ -1,4 +1,4 @@
-package com.test.question2;
+package com.test.question2.dao;
 
 public class Owner {
 	private String name;

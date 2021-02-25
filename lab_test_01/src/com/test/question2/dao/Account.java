@@ -1,4 +1,4 @@
-package com.test.question2;
+package com.test.question2.dao;
 
 public abstract class Account {
 	private Owner owner;
@@ -23,6 +23,11 @@ public abstract class Account {
 	public Owner getOwner() {
 		return owner;
 	}
+	
+	public Owner setOwner(Owner owner) {
+		return this.owner = owner;
+	}
+
 
 	public float getBalance() {
 		return balance;
@@ -36,6 +41,11 @@ public abstract class Account {
 	public String getNumber() {
 		return number;
 	}
+	
+	public String setNumber(String number) {
+		return this.number = number;
+	}
+
 
 	public void print() {
 		owner.print();
