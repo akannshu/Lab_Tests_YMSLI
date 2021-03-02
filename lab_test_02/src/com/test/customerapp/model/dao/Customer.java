@@ -1,4 +1,4 @@
-package com.customerapp.model.entity;
+package com.test.customerapp.model.dao;
 
 import java.util.Date;
 
@@ -8,9 +8,8 @@ public class Customer {
 	private String address;
 	private String phoneNumber;
 	private Date dob;
-	
+
 	public Customer() {
-		super();
 	}
 
 	public Customer(String name, String address, String phoneNumber, Date dob) {
@@ -82,7 +81,5 @@ public class Customer {
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
 
 }

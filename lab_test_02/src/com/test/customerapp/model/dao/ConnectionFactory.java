@@ -1,4 +1,4 @@
-package com.customerapp.model.dao;
+package com.test.customerapp.model.dao;
 
 import java.io.IOException;
 import java.io.InputStream;

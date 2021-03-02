@@ -1,4 +1,4 @@
-package com.customerapp.model.exceptions;
+package com.test.customerapp.model.exceptions;
 
 
 //custom exception wrapper class

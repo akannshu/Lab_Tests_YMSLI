@@ -1,29 +1,26 @@
-package com.customerapp.controller;
+package com.test.customerapp.controller;
 
 
-import java.time.LocalDate;
-import java.util.Date;
 import java.util.Optional;
 
-import com.customerapp.model.entity.Customer;
-import com.customerapp.model.service.CustomerService;
-import com.customerapp.model.service.CustomerServiceImpl;
+import com.test.customerapp.model.dao.Customer;
+import com.test.customerapp.model.service.CustomerService;
+import com.test.customerapp.model.service.CustomerServiceImpl;
 
 public class CustomerController {
 
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		CustomerService customerService=new CustomerServiceImpl();
 
 		
-//		Customer customer=new Customer("ankita", "delhi", "987654321", new Date(2012,02,23));	
-//		customerService.addCustomer(customer);
-//		Customer customer=new Customer("amit", "kapur", "990654321", new Date(2002,02,22));	
-//		customerService.addCustomer(customer);
+//		Customer customer1=new Customer("rahul", "delhi", "987873264", new Date(2010,12,13));	
+//		Customer customer2=new Customer("raj", "chennai", "5645645656", new Date(2012,12,21));	
+//		customerService.addCustomer(custome1r);
+		// customerService.addCustomer(customer2);
 		
-		Optional<Customer> customerOpt=customerService.getCustomerById(4);
+		Optional<Customer> customer = customerService.getCustomerById(2);
 		try {
-		String customerName=customerOpt.map(emp->emp.getName()).orElse("name not found");
+		String customerName=customer.map(emp->emp.getName()).orElse("not found");
 		System.out.println(customerName);
 		}catch (Exception e) {
 			System.out.println(e.getMessage());

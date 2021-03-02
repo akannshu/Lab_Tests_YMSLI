@@ -1,8 +1,8 @@
-package com.customerapp.model.service;
+package com.test.customerapp.model.service;
 import java.util.Optional;
 
-import com.customerapp.model.entity.Customer;
-import com.customerapp.model.exceptions.DataAccessException;
+import com.test.customerapp.model.dao.Customer;
+import com.test.customerapp.model.exceptions.DataAccessException;
 
 public interface CustomerService {
 	

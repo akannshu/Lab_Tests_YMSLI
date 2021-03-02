@@ -1,8 +1,7 @@
-package com.customerapp.model.dao;
+package com.test.customerapp.model.dao;
 import java.util.Optional;
 
-import com.customerapp.model.entity.Customer;
-import com.customerapp.model.exceptions.DataAccessException;
+import com.test.customerapp.model.exceptions.DataAccessException;
 
 
 public interface CustomerDao {

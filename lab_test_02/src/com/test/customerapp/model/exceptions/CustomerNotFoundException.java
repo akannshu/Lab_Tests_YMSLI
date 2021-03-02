@@ -1,4 +1,4 @@
-package com.customerapp.model.exceptions;
+package com.test.customerapp.model.exceptions;
 
 public class CustomerNotFoundException extends RuntimeException{
 	
