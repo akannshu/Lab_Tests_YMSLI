@@ -51,6 +51,8 @@ public abstract class Account {
 		owner.print();
 		System.out.println("account number: " + this.number+ "total balance: " + this.balance);
 	}
+	
+	public void input() {}
 
 	public abstract void deposit(float amount);
 

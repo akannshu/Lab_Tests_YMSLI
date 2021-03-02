@@ -47,6 +47,8 @@ public class Date {
 		System.out.println("The date is: " + this.day + "/" + this.month + "/" + this.year);
 	}
 	
+	public void input() {}
+	
 	
 	@Override
 	public String toString() {

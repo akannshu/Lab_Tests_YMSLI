@@ -21,6 +21,7 @@ public class CurrentAccount extends Account{
 	public float getCharges() {
 		return minimumBalance*5;
 	}
+	public void input() {}
 	
 	@Override
 	public void print() {

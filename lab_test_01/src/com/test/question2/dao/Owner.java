@@ -58,6 +58,7 @@ public class Owner {
 		System.out.println("Nic: " + this.nic);
 	}
 	
+	public void input() {}
 	
 	@Override
 	public String toString() {

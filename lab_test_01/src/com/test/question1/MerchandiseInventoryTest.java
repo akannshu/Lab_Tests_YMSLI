@@ -41,13 +41,15 @@ public class MerchandiseInventoryTest {
 			
 			
 			merchsSortedByName.forEach(System.out::println);
-			
+			System.out.println("-----------------");
 			List<Merchandise> merchsSortedByPrice = merchandises.stream()
 					.sorted(Comparator.comparing(Merchandise::getUnitPrice))
 					.collect(Collectors.toList());
 
 			Collections.reverse(merchsSortedByPrice);
 			merchsSortedByPrice.forEach(System.out::println);
+			
+			
 			
 			
 			readFile.close();			

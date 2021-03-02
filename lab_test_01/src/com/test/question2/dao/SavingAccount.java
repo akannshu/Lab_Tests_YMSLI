@@ -21,7 +21,7 @@ public class SavingAccount extends Account{
 		this.interestRate = interestRate;
 	}
 	
-	
+	public void input() {}
 	
 	public float getInterestRate() {
 		return interestRate;
