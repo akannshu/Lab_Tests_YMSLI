@@ -11,6 +11,6 @@ public class EagerInitialization {
     }
 
 	public static EagerInitialization getEagerInitialization() {
-		return eagerInit;
+		return eagerInit;		
 	}
 }
