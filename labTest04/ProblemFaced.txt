@@ -1,11 +1,6 @@
-1. In this project we had to provide queries for interactiong with database. Also we have to create tables by ourselves.
+1. In this project we had to provide queries for interaction with database. Also we have to create tables by ourselves.
  whereas Hibernate uses ORM to do such stuff.
 
-2. JDBC is database dependent Whereas Hibernate is database independent.
+2. Creating associations between relations is quite hard in JDBC associations like one-to-one etc can be used using annotations.
 
-3. Creating associations between relations is quite hard in JDBC associations like one-to-one etc can be used using annotations.
-
-4. JDBC code needs to be written in a try catch block as it throws checked exception(SQLexception).
-   Whereas Hibernate manages the exceptions itself by marking them as unchecked.
-
-5. Hibernate reduces the boiler plate code
+3. Hibernate reduced the boiler plate code
